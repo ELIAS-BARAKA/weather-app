@@ -16,7 +16,12 @@ const ForecastSummary = (props) => {
         {temperature.max}&deg;C
       </div>
       <div className="forecast-summery__description">{description}</div>
-      <button type="button" onClick={() => onSelect(date)}>
+      <button
+        type="button"
+        onClick={() => {
+          onSelect(date);
+        }}
+      >
         More details
       </button>
     </div>

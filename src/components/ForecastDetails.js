@@ -1,7 +1,7 @@
 import WeatherIcon from "react-icons-weather";
 import moment from "moment";
 
-const ForecastDetails = ({ selectedForecast }) => {
+function ForecastDetails({ selectedForecast }) {
   const { date, icon, temperature, description, humidity, wind } =
     selectedForecast;
 
@@ -28,6 +28,6 @@ const ForecastDetails = ({ selectedForecast }) => {
       </div>
     </div>
   );
-};
+}
 
 export default ForecastDetails;
