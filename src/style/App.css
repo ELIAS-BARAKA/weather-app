@@ -23,9 +23,14 @@ body {
   gap: 8px;
 }
 
-.forecast-summery__date,
-.forecast-summery__description {
-  text-align: center;
+.forecast-summery__icon {
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.forecast-summery__date {
+  /* text-align: center; */
+  font-weight: bold;
 }
 
 .forecast-details {
@@ -37,10 +42,22 @@ body {
   gap: 8px;
   padding-top: 16px;
 }
+
+.forecast-details__temperature {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .forecast-details__humidity {
   display: flex;
 }
 
 .forecast-details__wind {
   display: flex;
+}
+
+.forecast-details__date,
+.forecast-details label {
+  font-weight: bold;
 }

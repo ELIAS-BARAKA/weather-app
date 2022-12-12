@@ -6,11 +6,8 @@ const ForecastSummaries = ({ forecasts, onForecastSelect }) => {
       {forecasts.map((forecast) => {
         return (
           <ForecastSummary
-            key={forecast.date}
-            date={forecast.date}
-            icon={forecast.icon}
-            temperature={forecast.temperature}
-            description={forecast.description}
+            key={forecast.dt}
+            forecast={forecast}
             onSelect={onForecastSelect}
           />
         );
